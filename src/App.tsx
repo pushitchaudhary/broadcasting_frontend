@@ -30,6 +30,7 @@ const LivePlayer: React.FC = () => {
   }, [videoSrc]);
 
   return (
+   <>
     <div style={{ textAlign: 'center', background: '#000', padding: '20px' }}>
       <video 
         ref={videoRef} 
@@ -39,6 +40,11 @@ const LivePlayer: React.FC = () => {
         style={{ width: '100%', maxWidth: '800px' }} 
       />
     </div>
+    <div>
+      <p style={{ color: '#fff' }}>
+        If you see a black screen, make sure your phone is on the same Wi-Fi network as your Mac and that the stream is running.
+      </p>  
+    </div></>
   );
 };
 
